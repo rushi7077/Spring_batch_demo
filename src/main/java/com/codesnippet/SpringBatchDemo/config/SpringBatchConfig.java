@@ -41,6 +41,7 @@ public class SpringBatchConfig {
 				.targetType(Person.class)
 				.build();
 	}
+	@Bean
 	private LineMapper<Person> lineMapper() {
 		DefaultLineMapper<Person> lineMapper = new DefaultLineMapper<>();
 
